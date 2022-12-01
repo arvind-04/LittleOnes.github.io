@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="store.css">
+</head>
+<body>
+<!-- ---------------------------------header--------------------------- -->
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="logo.png" width="300px" >
+                </div>
+                <nav>
+                    <ul>
+                        <li ><a href="Home.html" >Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="login.html">Login/Register</a></li>
+                    </ul>
+                </nav>
+                <a href="sc.html"><img src="icons8-shopping-cart-50.png" width="30px" height="30px"></a>
+            </div>
+        </div>
+    </div>
+<!-- --------------------------------------store form--------------------------------- -->
+    <div class="store-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="children_day_banner.JPEG" width="800px" height="300px" alt="banner">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="Connect()">Connect with Us</span>
+                            <hr id="Indicator">
+                        </div>
+                        <form id="LoginForm">
+                            <input type="text" placeholder="Store Name">
+                            <input type="text" placeholder="Owner Name">
+                            <input type="tel" placeholder="Contact No.">
+                            <input type="email" placeholder="Email Address">
+                            <!-- <input type="password" placeholder="Password"> -->
+                            <button type="submit" class="btn" onclick="blue()">Connect</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ------------------footer----------------------------- -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="play-store.png">
+                        <img src="app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="logo.png" >
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Comfort for Your Baby</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2022 - LO</p>
+        </div>
+    </div>
+<!-- -----------------------------------------js----------------------------- -->
+<script>
+    var LoginForm = document.getElementById("LoginForm");
+    var RegisterForm = document.getElementById("RegisterForm");
+    var Indicator = document.getElementById("Indicator");       
+    function register(){
+        RegisterForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0px)";
+    }
+    function login(){
+        RegisterForm.style.transform = "translateX(300px)";
+        LoginForm.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(300px)";
+    }
+    function blue()
+    {
+        window.alert("Thank You For Connecting We'll Contact You Soon.");
+    }
+</script>
+</body>
+</html>
